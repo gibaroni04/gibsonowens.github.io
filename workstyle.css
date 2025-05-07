@@ -1,0 +1,88 @@
+body {
+    background-image: url('imgs_backgrounds/Worksbg.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    width: 100%;
+  }
+  
+  .image-row {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 10px; 
+    padding: 10px;
+    scrollbar-width: thin; 
+    scrollbar-color: transparent transparent; 
+    justify-content: left;
+  }
+  
+  .image-row img {
+    flex-shrink: 0; 
+    width: 300px; 
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+
+  /* Custom scrollbar for WebKit browsers */
+.image-row::-webkit-scrollbar {
+    height: 10px; 
+}
+
+.image-row::-webkit-scrollbar-track {
+    background: url('images/shelf.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.image-row::-webkit-scrollbar-thumb {
+    background-color: rgba(129, 123, 123, 0.5);
+    border-radius: 5px; 
+    border: 2px solid transparent; 
+}
+ 
+
+.bottom-center {
+    position: fixed; 
+    bottom: -27px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 446px; 
+    height: auto; 
+    z-index: 3; 
+}
+
+.image-rowmenu {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+.image-rowmenu img {
+  width: 80px; 
+  height: auto;
+  cursor: pointer;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

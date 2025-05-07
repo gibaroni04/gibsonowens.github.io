@@ -1,0 +1,105 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+body {
+    background-image: url('imgs_backgrounds/Biobg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-color: black;
+    height: 100vh; 
+    margin: 0;
+    
+}
+img.upper-left {
+    position: relative;
+    top: 200px;
+    left: 10px;
+    width: 30%; 
+    height: auto;
+    max-width: 360;
+    display:flex;
+    z-index: 2;
+    margin-top: -50px; 
+    margin-left: -70px; 
+}
+
+.left-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding-right: 15px;
+    gap: 15px;
+}
+
+.left-half img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    gap:20px;
+    padding-right:60px;
+}
+
+.right-half {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    font-size: 1.2rem; 
+   /* padding: 20px; */
+    padding-left: 20px; 
+    padding-right: 20px;
+    text-align: center; 
+
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: -30px; 
+    left: 25%; 
+    width: 55%; 
+    height: auto; 
+    z-index: 3; 
+    max-width: 720px;
+}
+
+.image-row {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.image-row img {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

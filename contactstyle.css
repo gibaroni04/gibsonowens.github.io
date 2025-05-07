@@ -1,0 +1,122 @@
+
+body {
+    background-image: url('imgs_backgrounds/Contactbg.jpg'); /* Replace with your image path */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-color: black;
+    height: 100%; /* Ensures the background covers the full viewport height */
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.header-image{
+    position: absolute;
+    top: 30px; 
+    left: 45px; 
+    width: 80%; 
+    height: auto; 
+    max-width: 1000px; 
+    z-index: 2; 
+}
+
+.contact-form {
+    position: relative;
+    z-index: 2; /* Ensures the form appears above the background */
+}
+
+
+.contact-form {
+    display: flex;
+    position: fixed;
+    bottom:30px;
+    right:60px;
+    flex-direction: column;
+    gap: 25px; 
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: white; 
+    color: #333; 
+    font-size: 1rem;
+    box-shadow: none; 
+    outline: none; 
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color: #545a61; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #acb1b5; 
+    color:black;
+}
+
+.bottom-left {
+    position: fixed; 
+    bottom: -100; 
+    left: 160px; 
+    top:100px;
+    width: 45%; 
+    height: auto; 
+    z-index: 1; 
+}
+
+.image-row {
+    position: absolute;
+    top: -8px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.image-row img {
+    width: 80px; 
+    height: auto;
+    cursor: pointer;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
